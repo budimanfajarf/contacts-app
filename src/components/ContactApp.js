@@ -8,14 +8,14 @@ class ContactApp extends React.Component {
     super(props);
     this.state = {
       contacts: getData(),
-    }
+    };
 
     this.onDeleteHandler = this.onDeleteHandler.bind(this);
     this.onAddContactHandler = this.onAddContactHandler.bind(this);
   }
 
   onDeleteHandler(id) {
-    const contacts = this.state.contacts.filter(contact => contact.id !== id);
+    const contacts = this.state.contacts.filter((contact) => contact.id !== id);
     this.setState({ contacts });
   }
 
@@ -29,9 +29,9 @@ class ContactApp extends React.Component {
             name,
             tag,
             imageUrl: '/images/default.jpg',
-          }
-        ]
-      }
+          },
+        ],
+      };
     });
   }
 

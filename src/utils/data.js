@@ -19,6 +19,6 @@ const getData = () => {
       imageUrl: '/images/rfajri27.jpeg',
     },
   ];
- }
- 
- export { getData };
+};
+
+export { getData };
